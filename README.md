@@ -23,6 +23,7 @@ npm run start
 To install dependencies, run database migrations, and start the server, follow these steps:
 
 1.**Navigate to the server directory**:
+
 cd server
 
 2.**Install dependencies**:
