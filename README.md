@@ -1,4 +1,5 @@
-**Installation and Running the Client**
+***Installation and Running the Client***
+
 To install dependencies and run the client, follow these steps:
 
 1.**Navigate to the client directory**:
@@ -17,7 +18,8 @@ npm install -D webpack-cli
 
 npm run start
 
-Installation and Running the Server
+***Installation and Running the Server***
+
 To install dependencies, run database migrations, and start the server, follow these steps:
 
 1.**Navigate to the server directory**:
