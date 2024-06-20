@@ -1,0 +1,28 @@
+.popup {
+  width: 400px;
+  height: 200px;
+  border: 1.5px solid #0000001a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  transform: translate(0%,140%);
+
+  .close {
+    cursor: pointer;
+    transform: translate(-10%,-300%);
+    margin-left: auto;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.1rem;
+    color:red;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Prompt';
+
+  }
+}

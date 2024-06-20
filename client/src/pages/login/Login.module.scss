@@ -1,0 +1,177 @@
+.loader {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login {
+  width: 400px;
+  height: auto;
+  border: 1.5px solid #0000001a;
+  padding-bottom: 20px;
+
+  .button {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .block {
+
+    &:first-child {
+      background-color: #5c33ff0d;
+
+      .info {
+        text-align: center;
+        font-size: .8rem;
+        line-height: 1rem;
+        cursor: inherit;
+      }
+    }
+
+
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    label {
+      align-self: start;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-family: 'Prompt';
+      font-size: 1rem;
+    }
+
+    .error {
+
+      height: 15px;
+      color: red;
+      font-size: 0.8rem;
+      display: flex;
+      align-self: end;
+      font-family: 'Prompt';
+      position: relative;
+      transform: scale(0%);
+      transition: all .3s ease;
+    }
+
+    .error.visible {
+      transform: scale(100%);
+    }
+
+
+    input {
+      align-self: start;
+      width: 100%;
+      padding-inline: 8px;
+      min-width: 0px;
+      outline: transparent;
+      outline-offset: 2px;
+      appearance: none;
+      vertical-align: top;
+      height: 28px;
+      position: relative;
+      border: 1.5px solid #0000001a;
+      border-radius: 5px;
+      white-space: nowrap;
+      color: black;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+
+    }
+
+    span {
+      font-size: 0.9rem;
+      font-family: 'Prompt';
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+
+    .input_wrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border: 1.5px solid #0000001a;
+      border-radius: 5px;
+
+      input {
+        border: none;
+      }
+
+      .input_wrap_block_timer {
+        transform: translateX(-20%);
+        color: red;
+        font-size: 0.9rem;
+        font-family: 'Prompt';
+        font-weight: 400;
+      }
+
+      .input_wrap_block_send_button {
+        height: 28px;
+        text-align: center;
+        font-size: 0.9rem;
+        font-family: 'Prompt';
+        width: 110px;
+        background: whitesmoke;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        transition: all .3s ease;
+
+        &:hover {
+          border: 1px solid black;
+          cursor: pointer;
+        }
+
+        &:disabled {
+          border: 1px solid gray;
+          -webkit-box-align: center;
+          -webkit-box-pack: center;
+
+          opacity: 0.3;
+          cursor: not-allowed;
+        }
+      }
+
+    }
+
+    .wallet {
+      padding-top: 10px;
+    }
+  }
+
+  .button_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup_error {
+    background: rgba(0, 0, 0, .2);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}

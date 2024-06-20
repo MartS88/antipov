@@ -1,0 +1,60 @@
+.member {
+  width: 305px;
+  height: 263px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: 0px 1px 3.98px 0px #33333326;
+
+
+  &:hover {
+    .member_wrapper {
+      .member_img {
+        transform: scale(1.1);
+      }
+    }
+
+  }
+
+  .member_wrapper {
+    padding: 36px 80px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    transition: all .2s ease-in-out;
+
+    .member_img {
+      transition: all .2s ease-in-out;
+      width: 124px;
+      height: 124px;
+      cursor: pointer;
+    }
+
+    .member_name {
+      width: 200px;
+      text-align: center;
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23.44px;
+      color: black;
+      cursor: auto;
+    }
+  }
+
+  .member_like_block {
+    width: 265px;
+    display: flex;
+    justify-content: center;
+
+    .member_like {
+      width:20px;
+      height: 20px;
+      cursor: pointer;
+      margin-left: auto;
+    }
+  }
+}
+
