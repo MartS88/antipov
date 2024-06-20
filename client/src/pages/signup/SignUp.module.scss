@@ -13,6 +13,7 @@
 }
 
 .signup {
+
   width: 500px;
   height: auto;
   top: 253px;
@@ -71,12 +72,18 @@
         align-items: center;
         gap: 10px;
 
+
+
         .eye {
           position: absolute;
           transform: translateX(2200%);
           width: 20px;
           height: 20px;
           cursor: pointer;
+
+          @media (max-width: 376px) {
+            transform: translateX(1590%);
+          }
         }
 
         input {
@@ -96,6 +103,9 @@
           outline: none;
           border: none;
 
+          @media (max-width: 376px) {
+           width: 343px;
+          }
         }
 
         .input_error {
@@ -185,19 +195,5 @@
     width: 100%;
     max-width: 375px;
 
-
-    .signup_wrapper {
-      width: 100%;
-
-
-      .signup_block {
-        width: 100%;
-
-        input {
-          width: 100%;
-        }
-      }
-    }
   }
-
 }
